@@ -32,7 +32,7 @@ app.use("/api/subtopics", subtopics);
 app.use("/api/formats", formats);
 app.use("/api/users", users);
 
-const conURI = process.env.DBCONNECTIONURI;
+const conURI = process.env.DB_URI;
 dbConnect(conURI);
 const PORT = process.env.PORT || 5000;
 

@@ -3,6 +3,7 @@ import topics from "./routes/topic.mjs";
 import subtopics from "./routes/subtopic.mjs";
 import formats from "./routes/format.mjs";
 import users from "./routes/user.mjs";
+import quotes from "./routes/quote.mjs";
 import * as dotenv from "dotenv";
 import { dbConnect } from "./utilities/dbconnect.mjs";
 dotenv.config();
@@ -31,6 +32,7 @@ app.use("/api/topics", topics);
 app.use("/api/subtopics", subtopics);
 app.use("/api/formats", formats);
 app.use("/api/users", users);
+app.use("/api/quotes", quotes);
 
 const conURI = process.env.DB_URI;
 dbConnect(conURI);

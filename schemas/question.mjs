@@ -6,7 +6,7 @@ const schema = new mongoose.Schema({
   topic: { type: mongoose.Types.ObjectId, ref: "Topics" },
   subtopic: String,
   created_at: {
-    type: Date,
+    type: Number,
     default: () => {
       return Date.now();
     },

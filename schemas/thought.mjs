@@ -5,4 +5,4 @@ const schema = new mongoose.Schema({
   points: [String],
 });
 
-export default mongoose.model("review", schema);
+export default mongoose.model("thought", schema);

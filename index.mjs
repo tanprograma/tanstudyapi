@@ -42,6 +42,7 @@ app.use("/api/diaries", diaries);
 app.use("/api/reviews", reviews);
 app.use("/api/plans", plans);
 app.use("/api/thoughts", thoughts);
+app.use("/api/fields", fields);
 
 const conURI = process.env.DB_URI;
 dbConnect(conURI);

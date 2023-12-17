@@ -8,6 +8,7 @@ import plans from "./routes/plan.mjs";
 import reviews from "./routes/review.mjs";
 import thoughts from "./routes/thought.mjs";
 import diaries from "./routes/diary.mjs";
+import fields from "./routes/field.mjs";
 import * as dotenv from "dotenv";
 import { dbConnect } from "./utilities/dbconnect.mjs";
 dotenv.config();

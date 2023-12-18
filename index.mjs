@@ -9,6 +9,7 @@ import reviews from "./routes/review.mjs";
 import thoughts from "./routes/thought.mjs";
 import diaries from "./routes/diary.mjs";
 import fields from "./routes/field.mjs";
+import todos from "./routes/todo.mjs";
 import * as dotenv from "dotenv";
 import { dbConnect } from "./utilities/dbconnect.mjs";
 dotenv.config();
@@ -43,6 +44,7 @@ app.use("/api/reviews", reviews);
 app.use("/api/plans", plans);
 app.use("/api/thoughts", thoughts);
 app.use("/api/fields", fields);
+app.use("/api/todos", todos);
 
 const conURI = process.env.DB_URI;
 dbConnect(conURI);

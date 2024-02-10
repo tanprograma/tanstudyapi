@@ -1,3 +1,4 @@
+import topic from "../schemas/topic.mjs";
 import Topic from "../schemas/topic.mjs";
 import express from "express";
 const router = express.Router();
@@ -20,4 +21,5 @@ router.post("/create", async (req, res) => {
   const topic = await Topic.create(req.body);
   res.send(topic);
 });
+
 export default router;
